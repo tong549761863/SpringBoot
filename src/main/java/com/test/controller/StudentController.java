@@ -34,6 +34,7 @@ public class StudentController {
 		iStudentService.addStudents(name);
 	}
 
+	//test
 	@RequestMapping(value = "/health", method = RequestMethod.GET)
 	public String add() {
 		return "ok";
