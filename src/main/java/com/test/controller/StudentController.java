@@ -32,8 +32,14 @@ public class StudentController {
 	@RequestMapping(value = "/add", method = RequestMethod.POST)  
 	public void add(@RequestParam(value="name") String name) {  
 		iStudentService.addStudents(name);
-	}  
-	
+	}
+
+	@RequestMapping(value = "/health", method = RequestMethod.GET)
+	public String add() {
+		return "ok";
+	}
+
+
 	@RequestMapping(value = "/delete", method = RequestMethod.POST)  
 	public void delete(@RequestParam(value="array[]") int[] array)
 	{
